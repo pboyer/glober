@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:example="http://schemas.android.com/apk/res/android.peter.geometry.entry">
+  
+    <PreferenceCategory android:title="@string/appearance_category_title"
+        android:key="@string/appearance_category">
+    	
+        <CheckBoxPreference 
+            android:key="@string/use_fullscreen"
+            android:summary="Let this app cover the whole screen"
+            android:title="@string/use_fullscreen_title" 
+            android:defaultValue="false"
+        />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+       android:title="Sensor"
+       android:key="sensor_settings">
+       
+       <android.peter.geometry.preferences.SeekBarPreference
+     		android:key="@string/zoom_factor"
+		android:title="@string/zoom_factor_title"
+		android:dialogTitle="@string/zoom_factor_title"
+		android:summary="Adjust how fast you zoom"
+		android:persistent="true"
+		android:defaultValue="38"
+		example:minValue="10"
+		example:maxValue="50" 
+	/>
+	
+	</PreferenceCategory>
+  
+</PreferenceScreen>

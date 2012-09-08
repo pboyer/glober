@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hi!</string>
+    <string name="app_name">GlobeWrm</string>
+    
+    <string name="preferences">Preferences</string>
+ 
+    <color name="white_color">#fff</color>
+    <color name="gray_color">#aaa</color>
+    
+    <string name="compass_smoothing">compass_smoothing</string>
+    <string name="compass_smoothing_title">Compass Smoothing</string>
+    
+    <string name="accelerometer_smoothing">gravity_smoothing</string>
+    <string name="accelerometer_smoothing_title">Gravity Smoothing</string>
+    
+    <string name="use_orientation_sensors">use_orientation_sensors</string>
+    <string name="use_orientation_sensors_title">Use Orientation Sensors</string>
+    
+    <string name="gyroscope_smoothing">gyroscope_smoothing</string>
+    <string name="gyroscope_smoothing_title">Gyroscope Smoothing</string>
+    
+    <string name="use_gyroscope">use_gyroscope</string>
+    <string name="use_gyroscope_title">Use Gyroscope</string>
+    
+    <string name="use_fullscreen">use_fullscreen</string>
+    <string name="use_fullscreen_title">Fullscreen mode</string>
+    
+    <string name="appearance_category">appearance_category</string>
+    <string name="appearance_category_title">Appearance</string>
+    
+    <string name="zoom_factor">zoom_factor</string>
+    <string name="zoom_factor_title">Zoom Factor</string>
+    
+    <string name="gyroscope_category">gyro_category</string>
+    <string name="gyroscope_category_title">Gyroscope</string>
+    
+    <string name="open_image">Open image</string>
+    <string name="bridge_image">Bridge</string>
+    <string name="globe_image">Globe</string>
+    <string name="highway_image">Highway</string>
+    <string name="escher_image">Escher</string>
+    <string name="lusanne_image">Lusanne Cathedral</string>
+    <string name="mill_image">Mill</string>
+    <string name="ruins_image">Ruins (?)</string>
+    
+    
+    
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id = "@+id/preferences"
+		  android:title = "@string/preferences" />
+		  
+  	<item android:id = "@+id/open_image"
+	android:title = "@string/open_image">
+	<menu>
+		<item android:id="@+id/bridge_image"
+                 android:title="@string/bridge_image" />
+           <item android:id="@+id/globe_image"
+                 android:title="@string/globe_image" />
+           <item android:id="@+id/highway_image"
+                 android:title="@string/highway_image" />
+           <item android:id="@+id/escher_image"
+                 android:title="@string/escher_image" />
+           <item android:id="@+id/lusanne_image"
+                 android:title="@string/lusanne_image" />	
+           <item android:id="@+id/mill_image"
+                 android:title="@string/mill_image" />		
+           <item android:id="@+id/ruins_image"
+                 android:title="@string/ruins_image" />	
+	 </menu>
+	</item>
+		  
+</menu>
+
+

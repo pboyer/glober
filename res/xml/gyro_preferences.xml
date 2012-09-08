@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:example="http://schemas.android.com/apk/res/android.peter.geometry.entry">
+  
+  		<PreferenceCategory android:title="@string/gyroscope_category_title"
+        	android:key="@string/gyroscope_category">
+       
+		<CheckBoxPreference 
+            android:key="@string/use_gyroscope"
+            android:summary="If you can, you should definitely use this."
+            android:title="@string/use_gyroscope_title" 
+            android:defaultValue="true"
+            android:dependency="@string/use_orientation_sensors"
+        />
+        
+	    <android.peter.geometry.preferences.SeekBarPreference
+      		android:key="@string/gyroscope_smoothing"
+			android:title="@string/gyroscope_smoothing_title"
+			android:dialogTitle="@string/gyroscope_smoothing_title"
+			android:summary="Sensor fusion!!!"
+			android:persistent="true"
+			android:defaultValue="38"
+			example:minValue="10"
+			example:maxValue="50" 
+			android:dependency="@string/use_gyroscope"
+		/>
+		       
+    </PreferenceCategory>
+  
+</PreferenceScreen>

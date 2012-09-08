@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:example="http://schemas.android.com/apk/res/android.peter.geometry.entry">
+  
+    <PreferenceCategory 
+        android:title="Sensor"
+        android:key="sensor_settings">
+		
+        <CheckBoxPreference 
+            android:key="@string/use_orientation_sensors"
+            android:summary="Use accelerometer, compass, and gyroscope for orientation"
+            android:title="@string/use_orientation_sensors_title" 
+            android:defaultValue="true"
+        />
+        
+        <android.peter.geometry.preferences.SeekBarPreference
+      		android:key="@string/compass_smoothing"
+			android:title="@string/compass_smoothing_title"
+			android:dialogTitle="@string/compass_smoothing_title"
+			android:summary="Adjust how much the compass sensitivity is smoothed"
+			android:persistent="true"
+			android:defaultValue="20"
+			example:minValue="10"
+			example:maxValue="50" 
+			android:dependency="@string/use_orientation_sensors"
+		/>
+		
+	    <android.peter.geometry.preferences.SeekBarPreference
+      		android:key="@string/accelerometer_smoothing"
+			android:title="@string/accelerometer_smoothing_title"
+			android:dialogTitle="@string/accelerometer_smoothing_title"
+			android:summary="Adjust how much the accelerometer is smoothed"
+			android:persistent="true"
+			android:defaultValue="20"
+			example:minValue="10"
+			example:maxValue="50" 
+			android:dependency="@string/use_orientation_sensors"
+		/>
+		
+		</PreferenceCategory>
+  
+  
+  
+  
+  
+</PreferenceScreen>
